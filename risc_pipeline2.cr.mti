@@ -1,0 +1,156 @@
+{C:/Users/Keerti A M/RISC-V-CPU/RISC-V-32I-5-stage-Pipeline-Core/src/ALU_Decoder.v} {1 {vlog -work work -stats=none {C:/Users/Keerti A M/RISC-V-CPU/RISC-V-32I-5-stage-Pipeline-Core/src/ALU_Decoder.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module ALU_Decoder
+
+Top level modules:
+	ALU_Decoder
+
+} {} {}} {C:/Users/Keerti A M/RISC-V-CPU/RISC-V-32I-5-stage-Pipeline-Core/src/Sign_Extend.v} {1 {vlog -work work -stats=none {C:/Users/Keerti A M/RISC-V-CPU/RISC-V-32I-5-stage-Pipeline-Core/src/Sign_Extend.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module Sign_Extend
+
+Top level modules:
+	Sign_Extend
+
+} {} {}} {C:/Users/Keerti A M/RISC-V-CPU/RISC-V-32I-5-stage-Pipeline-Core/src/Fetch_Cycle.v} {1 {vlog -work work -stats=none {C:/Users/Keerti A M/RISC-V-CPU/RISC-V-32I-5-stage-Pipeline-Core/src/Fetch_Cycle.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module fetch_cycle
+
+Top level modules:
+	fetch_cycle
+
+} {} {}} {C:/Users/Keerti A M/RISC-V-CPU/RISC-V-32I-5-stage-Pipeline-Core/src/Hazard_unit.v} {1 {vlog -work work -stats=none {C:/Users/Keerti A M/RISC-V-CPU/RISC-V-32I-5-stage-Pipeline-Core/src/Hazard_unit.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module hazard_unit
+
+Top level modules:
+	hazard_unit
+
+} {} {}} {C:/Users/Keerti A M/RISC-V-CPU/RISC-V-32I-5-stage-Pipeline-Core/src/PC_Adder.v} {1 {vlog -work work -stats=none {C:/Users/Keerti A M/RISC-V-CPU/RISC-V-32I-5-stage-Pipeline-Core/src/PC_Adder.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module PC_Adder
+
+Top level modules:
+	PC_Adder
+
+} {} {}} {C:/Users/Keerti A M/RISC-V-CPU/RISC-V-32I-5-stage-Pipeline-Core/src/Execute_Cycle.v} {1 {vlog -work work -stats=none {C:/Users/Keerti A M/RISC-V-CPU/RISC-V-32I-5-stage-Pipeline-Core/src/Execute_Cycle.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module execute_cycle
+
+Top level modules:
+	execute_cycle
+
+} {} {}} {C:/Users/Keerti A M/RISC-V-CPU/RISC-V-32I-5-stage-Pipeline-Core/src/PC.v} {1 {vlog -work work -stats=none {C:/Users/Keerti A M/RISC-V-CPU/RISC-V-32I-5-stage-Pipeline-Core/src/PC.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module PC_Module
+
+Top level modules:
+	PC_Module
+
+} {} {}} {C:/Users/Keerti A M/RISC-V-CPU/RISC-V-32I-5-stage-Pipeline-Core/src/pipeline_tb.v} {1 {vlog -work work -stats=none {C:/Users/Keerti A M/RISC-V-CPU/RISC-V-32I-5-stage-Pipeline-Core/src/pipeline_tb.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module tb
+
+Top level modules:
+	tb
+
+} {} {}} {C:/Users/Keerti A M/RISC-V-CPU/RISC-V-32I-5-stage-Pipeline-Core/src/Pipeline_Top.v} {1 {vlog -work work -stats=none {C:/Users/Keerti A M/RISC-V-CPU/RISC-V-32I-5-stage-Pipeline-Core/src/Pipeline_Top.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module fetch_cycle
+-- Compiling module decode_cycle
+-- Compiling module execute_cycle
+-- Compiling module memory_cycle
+-- Compiling module writeback_cycle
+-- Compiling module PC_Module
+-- Compiling module PC_Adder
+-- Compiling module Mux
+-- Compiling module Mux_3_by_1
+-- Compiling module Instruction_Memory
+-- Compiling module ALU_Decoder
+-- Compiling module Main_Decoder
+-- Compiling module Control_Unit_Top
+-- Compiling module Register_File
+-- Compiling module Sign_Extend
+-- Compiling module ALU
+-- Compiling module Data_Memory
+-- Compiling module hazard_unit
+-- Compiling module Pipeline_top
+
+Top level modules:
+	Pipeline_top
+
+} {} {}} {C:/Users/Keerti A M/RISC-V-CPU/RISC-V-32I-5-stage-Pipeline-Core/src/Decode_Cyle.v} {1 {vlog -work work -stats=none {C:/Users/Keerti A M/RISC-V-CPU/RISC-V-32I-5-stage-Pipeline-Core/src/Decode_Cyle.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module decode_cycle
+
+Top level modules:
+	decode_cycle
+
+} {} {}} {C:/Users/Keerti A M/RISC-V-CPU/RISC-V-32I-5-stage-Pipeline-Core/src/Memory_Cycle.v} {1 {vlog -work work -stats=none {C:/Users/Keerti A M/RISC-V-CPU/RISC-V-32I-5-stage-Pipeline-Core/src/Memory_Cycle.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module memory_cycle
+
+Top level modules:
+	memory_cycle
+
+} {} {}} {C:/Users/Keerti A M/RISC-V-CPU/RISC-V-32I-5-stage-Pipeline-Core/src/Instruction_Memory.v} {1 {vlog -work work -stats=none {C:/Users/Keerti A M/RISC-V-CPU/RISC-V-32I-5-stage-Pipeline-Core/src/Instruction_Memory.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module Instruction_Memory
+
+Top level modules:
+	Instruction_Memory
+
+} {} {}} {C:/Users/Keerti A M/RISC-V-CPU/RISC-V-32I-5-stage-Pipeline-Core/src/Mux.v} {1 {vlog -work work -stats=none {C:/Users/Keerti A M/RISC-V-CPU/RISC-V-32I-5-stage-Pipeline-Core/src/Mux.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module Mux
+-- Compiling module Mux_3_by_1
+
+Top level modules:
+	Mux
+	Mux_3_by_1
+
+} {} {}} {C:/Users/Keerti A M/RISC-V-CPU/RISC-V-32I-5-stage-Pipeline-Core/src/ALU.v} {1 {vlog -work work -stats=none {C:/Users/Keerti A M/RISC-V-CPU/RISC-V-32I-5-stage-Pipeline-Core/src/ALU.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module ALU
+
+Top level modules:
+	ALU
+
+} {} {}} {C:/Users/Keerti A M/RISC-V-CPU/RISC-V-32I-5-stage-Pipeline-Core/src/Control_Unit_Top.v} {1 {vlog -work work -stats=none {C:/Users/Keerti A M/RISC-V-CPU/RISC-V-32I-5-stage-Pipeline-Core/src/Control_Unit_Top.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module ALU_Decoder
+-- Compiling module Main_Decoder
+-- Compiling module Control_Unit_Top
+
+Top level modules:
+	Control_Unit_Top
+
+} {} {}} {C:/Users/Keerti A M/RISC-V-CPU/RISC-V-32I-5-stage-Pipeline-Core/src/Data_Memory.v} {1 {vlog -work work -stats=none {C:/Users/Keerti A M/RISC-V-CPU/RISC-V-32I-5-stage-Pipeline-Core/src/Data_Memory.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module Data_Memory
+
+Top level modules:
+	Data_Memory
+
+} {} {}} {C:/Users/Keerti A M/RISC-V-CPU/RISC-V-32I-5-stage-Pipeline-Core/src/Main_Decoder.v} {1 {vlog -work work -stats=none {C:/Users/Keerti A M/RISC-V-CPU/RISC-V-32I-5-stage-Pipeline-Core/src/Main_Decoder.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module Main_Decoder
+
+Top level modules:
+	Main_Decoder
+
+} {} {}} {C:/Users/Keerti A M/RISC-V-CPU/RISC-V-32I-5-stage-Pipeline-Core/src/Writeback_Cycle.v} {1 {vlog -work work -stats=none {C:/Users/Keerti A M/RISC-V-CPU/RISC-V-32I-5-stage-Pipeline-Core/src/Writeback_Cycle.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module writeback_cycle
+
+Top level modules:
+	writeback_cycle
+
+} {} {}} {C:/Users/Keerti A M/RISC-V-CPU/RISC-V-32I-5-stage-Pipeline-Core/src/Register_File.v} {1 {vlog -work work -stats=none {C:/Users/Keerti A M/RISC-V-CPU/RISC-V-32I-5-stage-Pipeline-Core/src/Register_File.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module Register_File
+
+Top level modules:
+	Register_File
+
+} {} {}}
