@@ -1,6 +1,7 @@
 `timescale 1ns/1ps
 
 `include "defines.v"
+`default_nettype none
 
 module riscv_cpu (
 	input  wire                       clk       ,
@@ -195,6 +196,7 @@ module riscv_cpu (
 
 	stage_if stage_if0 (
 		// input
+		.clk       (clk          ),
 		.rst       (rst          ),
 		.pc_i      (pc           ),
 		.mem_data_i(icache_r_data),
@@ -275,7 +277,7 @@ module riscv_cpu (
 
 	reg_id_ex reg_id_ex0 (
 		// input
-		.clk          (clk           ),
+		.clk          (clk            ),
 		.rst          (rst           ),
 		.id_aluop     (id_aluop      ),
 		.id_alusel    (id_alusel     ),
@@ -340,6 +342,7 @@ module riscv_cpu (
 
 	stage_mem stage_mem0 (
 		// input
+		.clk        (clk            ),
 		.rst        (rst            ),
 		.reg_waddr_i(mem_reg_waddr_i),
 		.we_i       (mem_we_i       ),
@@ -349,7 +352,7 @@ module riscv_cpu (
 		.rt_data    (mem_rt_data    ),
 		.mem_data_i (dcache_r_data  ),
 		.mem_busy   (dcache_busy    ),
-		.mem_done   (dcache_donea   ),
+		.mem_done   (dcache_done    ),
 		// output
 		.reg_waddr_o(mem_reg_waddr_o),
 		.we_o       (mem_we_o       ),
@@ -377,3 +380,5 @@ module riscv_cpu (
 	);
 
 endmodule // riscv_cpu
+
+`default_nettype wire

@@ -1,12 +1,12 @@
 `include "defines.v"
-
+//stores the pc and decides whether the pc should jump, increment by 4 or stay still because of a stall.
 module reg_pc (
 	input  wire                clk        ,
 	input  wire                rst        ,
 	input  wire [         5:0] stall      ,
 	input  wire                br         ,
-	input  wire [`InstAddrBus] br_addr    ,
-	output reg  [`InstAddrBus] pc_o       ,
+	input  wire [`InstAddrBus] br_addr    , //pc changes when branch is changed
+	output reg  [`InstAddrBus] pc_o       , //output of pc_o
 	output reg                 right_one_o
 );
 
@@ -24,7 +24,7 @@ module reg_pc (
 		if (rst) begin
 			pc_o      <= 0;
 			right_one <= 0;
-			pc        <= 4;
+			pc        <= 0;
 		end else if (!stall[0]) begin
 			//$display("PC now: %h", pc);
 			pc_o <= pc;

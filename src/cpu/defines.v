@@ -1,6 +1,6 @@
 `ifndef DEFINES_V
 `define DEFINES_V
-
+//from risc v unpriviledged spec opcode map
 //==================  Instruction opcode in RISC-V ================== 
 `define OP_LUI      7'b0110111
 `define OP_AUIPC    7'b0010111

@@ -361,7 +361,7 @@ module cache #(
 		
 		STATE_WAIT_FOR_WRITE: begin
 			if(mem_done) begin
-				next_state <= STATE_IDLE;
+				next_state = STATE_IDLE;
 			end
 		end
 		endcase

@@ -1,6 +1,7 @@
 `include "defines.v"
 
 module stage_mem (
+	input  wire               clk        ,
 	input  wire               rst        ,
 	input  wire [`RegAddrBus] reg_waddr_i,
 	input  wire               we_i       ,
@@ -23,26 +24,34 @@ module stage_mem (
 );
 
 	reg mem_taking;
+	reg next_mem_taking;
 
 	`define SET_MEM_INST(i_stallreq, i_mem_taking, i_mem_re, i_mem_we, i_mem_addr_o, i_mem_data_o) \
 		stallreq = i_stallreq; \
-		mem_taking = i_mem_taking; \
+		next_mem_taking = i_mem_taking; \
 		mem_re = i_mem_re; \
 		mem_we = i_mem_we; \
 		mem_addr_o = i_mem_addr_o; \
 		mem_data_o = i_mem_data_o;
 
 	always @ (*) begin
+		stallreq = 0;
+		next_mem_taking = mem_taking;
+		mem_re = 0;
+		mem_we = 0;
+		mem_addr_o = 0;
+		mem_data_o = 0;
+		mem_sel = 4'b0000;
+		reg_waddr_o = reg_waddr_i;
+		we_o = we_i;
+		reg_wdata_o = reg_wdata_i;
+
 		if(rst) begin
-			`SET_MEM_INST(0, 0, 0, 0, 0, 0)
 			reg_waddr_o = 0;
-			we_o        = 0;
+			we_o = 0;
 			reg_wdata_o = 0;
-			mem_sel     = 4'b0000;
-			mem_taking  = 0;
+			next_mem_taking = 0;
 		end else if (!mem_busy && !mem_taking) begin
-			reg_waddr_o = reg_waddr_i;
-			we_o        = we_i;
 			case (aluop)
 				`EXE_LB_OP, `EXE_LH_OP, `EXE_LW_OP, `EXE_LBU_OP, `EXE_LHU_OP : begin
 					`SET_MEM_INST(1, 1, 1, 0, {mem_addr_i[31:2], 2'b0}, 0)
@@ -78,15 +87,15 @@ module stage_mem (
 				end
 				default : begin
 					stallreq    = 0;
-					mem_taking  = 0;
+					next_mem_taking = 0;
 					`SET_MEM_INST(0, 0, 0, 0, 0, 0)
 					mem_sel     = 4'b0000;
 					reg_wdata_o = reg_wdata_i;
 				end
 			endcase // aluop
-		end else if (!mem_busy && mem_taking) begin
-			stallreq   = 0;
-			mem_taking = 0;
+		end else if (mem_taking && mem_done) begin
+			stallreq = 0;
+			next_mem_taking = 0;
 			case (aluop)
 				`EXE_LB_OP : begin
 					case (mem_addr_i[1:0])
@@ -130,16 +139,16 @@ module stage_mem (
 					reg_wdata_o = reg_wdata_i;
 				end
 			endcase // aluop
-		end else if (mem_busy) begin
+		end else if (mem_taking || mem_busy) begin
 			stallreq = 1;
-		end else begin
-			`SET_MEM_INST(0, 0, 0, 0, 0, 0)
-			reg_waddr_o = 0;
-			we_o        = 0;
-			reg_wdata_o = 0;
-			mem_sel     = 4'b0000;
-			mem_taking  = 0;
 		end
+	end
+
+	always @ (posedge clk or posedge rst) begin
+		if (rst)
+			mem_taking <= 0;
+		else
+			mem_taking <= next_mem_taking;
 	end
 
 endmodule // stage_mem

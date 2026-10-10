@@ -1,0 +1,578 @@
+m255
+K4
+z2
+!s11f MIXED_VERSIONS
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dC:/intelFPGA/18.1
+vcache
+Z0 !s110 1791458585
+!i10b 1
+!s100 3Wh1^7U]ki<KX:km2KE`l1
+IOO9_;mH8Z`<n1?z1B>N[12
+Z1 VDg1SIo80bB@j0V0VzS_@n1
+Z2 dC:/Users/Keerti A M/Documents/RISC-V-CPU
+Z3 w1791452852
+8C:/Users/Keerti A M/Documents/RISC-V-CPU/src/cpu/cache.v
+FC:/Users/Keerti A M/Documents/RISC-V-CPU/src/cpu/cache.v
+L0 8
+Z4 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z5 !s108 1791458585.000000
+!s107 C:\Users\Keerti A M\Documents\RISC-V-CPU\src\cpu\simple_ram.v|C:\Users\Keerti A M\Documents\RISC-V-CPU\src\cpu\utility.v|C:/Users/Keerti A M/Documents/RISC-V-CPU/src/cpu/cache.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Keerti A M/Documents/RISC-V-CPU/src/cpu/cache.v|
+!i113 1
+Z6 o-work work
+Z7 tCvgOpt 0
+vcpu
+R0
+!i10b 1
+!s100 M4kQF;nfOeZcR6gXIKOQA3
+I?n2BaM]GlXJ0L2:NiP:=o3
+R1
+R2
+Z8 w1773334582
+8C:/Users/Keerti A M/Documents/RISC-V-CPU/src/cpu/cpu.v
+FC:/Users/Keerti A M/Documents/RISC-V-CPU/src/cpu/cpu.v
+L0 5
+R4
+r1
+!s85 0
+31
+R5
+!s107 C:\Users\Keerti A M\Documents\RISC-V-CPU\src\cpu\defines.v|C:/Users/Keerti A M/Documents/RISC-V-CPU/src/cpu/cpu.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Keerti A M/Documents/RISC-V-CPU/src/cpu/cpu.v|
+!i113 1
+R6
+R7
+vctrl
+R0
+!i10b 1
+!s100 dPjDhcU9Vamn3?Mh`lfnE1
+IB4@>NSc;bCUFU5kZ_Hz?g1
+R1
+R2
+R8
+8C:/Users/Keerti A M/Documents/RISC-V-CPU/src/cpu/ctrl.v
+FC:/Users/Keerti A M/Documents/RISC-V-CPU/src/cpu/ctrl.v
+L0 3
+R4
+r1
+!s85 0
+31
+R5
+!s107 C:\Users\Keerti A M\Documents\RISC-V-CPU\src\cpu\defines.v|C:/Users/Keerti A M/Documents/RISC-V-CPU/src/cpu/ctrl.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Keerti A M/Documents/RISC-V-CPU/src/cpu/ctrl.v|
+!i113 1
+R6
+R7
+vfifo
+Z9 !s110 1773335767
+!i10b 1
+!s100 jcmCl7Geo@:_nF22XcYQd2
+ImHWg7R5SAK_imUi0>Vfi_2
+R1
+Z10 dC:/Users/Keerti A M/RISC-V-CPU
+R8
+8C:/Users/Keerti A M/RISC-V-CPU/src/cpu/library/fifo.v
+FC:/Users/Keerti A M/RISC-V-CPU/src/cpu/library/fifo.v
+L0 5
+R4
+r1
+!s85 0
+31
+Z11 !s108 1773335767.000000
+!s107 C:/Users/Keerti A M/RISC-V-CPU/src/cpu/library/fifo.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Keerti A M/RISC-V-CPU/src/cpu/library/fifo.v|
+!i113 1
+R6
+R7
+vmem_ctrl
+Z12 !s110 1791458586
+!i10b 1
+!s100 g?lEEdMjgK:bK=^@gzo<T0
+I4BEB]=jAUH90Q23FMjR`00
+R1
+R2
+R8
+8C:/Users/Keerti A M/Documents/RISC-V-CPU/src/cpu/mem_ctrl.v
+FC:/Users/Keerti A M/Documents/RISC-V-CPU/src/cpu/mem_ctrl.v
+L0 7
+R4
+r1
+!s85 0
+31
+Z13 !s108 1791458586.000000
+!s107 C:\Users\Keerti A M\Documents\RISC-V-CPU\src\cpu\utility.v|C:/Users/Keerti A M/Documents/RISC-V-CPU/src/cpu/mem_ctrl.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Keerti A M/Documents/RISC-V-CPU/src/cpu/mem_ctrl.v|
+!i113 1
+R6
+R7
+vmiso_fifo
+R9
+!i10b 1
+!s100 8hXk>WIkR[dYlU^W>O8W<3
+IF]_oI:nSbooPf9K?^P^9F3
+R1
+R10
+R8
+Z14 8C:/Users/Keerti A M/RISC-V-CPU/src/cpu/library/mfifo.v
+Z15 FC:/Users/Keerti A M/RISC-V-CPU/src/cpu/library/mfifo.v
+L0 40
+R4
+r1
+!s85 0
+31
+R11
+Z16 !s107 C:/Users/Keerti A M/RISC-V-CPU/src/cpu/library/mfifo.v|
+Z17 !s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Keerti A M/RISC-V-CPU/src/cpu/library/mfifo.v|
+!i113 1
+R6
+R7
+vmultichan_trans
+R9
+!i10b 1
+!s100 ;?SnQU4BW9Q6OM;?eA``g1
+I1AaKHgBQgbRhXKL^SGQ:V1
+R1
+R10
+R8
+8C:/Users/Keerti A M/RISC-V-CPU/src/cpu/library/multichan_trans.v
+FC:/Users/Keerti A M/RISC-V-CPU/src/cpu/library/multichan_trans.v
+L0 5
+R4
+r1
+!s85 0
+31
+R11
+!s107 C:/Users/Keerti A M/RISC-V-CPU/src/cpu/library/multichan_trans.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Keerti A M/RISC-V-CPU/src/cpu/library/multichan_trans.v|
+!i113 1
+R6
+R7
+vreg_ex_mem
+R12
+!i10b 1
+!s100 _RPZKjK<ib3Fb9UN_Y52>2
+IEG@InBmalR]kXEkgb_nP70
+R1
+R2
+R8
+8C:/Users/Keerti A M/Documents/RISC-V-CPU/src/cpu/reg_ex_mem.v
+FC:/Users/Keerti A M/Documents/RISC-V-CPU/src/cpu/reg_ex_mem.v
+L0 3
+R4
+r1
+!s85 0
+31
+R13
+!s107 C:\Users\Keerti A M\Documents\RISC-V-CPU\src\cpu\defines.v|C:/Users/Keerti A M/Documents/RISC-V-CPU/src/cpu/reg_ex_mem.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Keerti A M/Documents/RISC-V-CPU/src/cpu/reg_ex_mem.v|
+!i113 1
+R6
+R7
+vreg_id_ex
+R12
+!i10b 1
+!s100 Pc4BQge:9Ch<f=UMa0Jm53
+IRJ`P?hcEH]3`SQbNAeDc70
+R1
+R2
+R8
+8C:/Users/Keerti A M/Documents/RISC-V-CPU/src/cpu/reg_id_ex.v
+FC:/Users/Keerti A M/Documents/RISC-V-CPU/src/cpu/reg_id_ex.v
+L0 3
+R4
+r1
+!s85 0
+31
+R13
+!s107 C:\Users\Keerti A M\Documents\RISC-V-CPU\src\cpu\defines.v|C:/Users/Keerti A M/Documents/RISC-V-CPU/src/cpu/reg_id_ex.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Keerti A M/Documents/RISC-V-CPU/src/cpu/reg_id_ex.v|
+!i113 1
+R6
+R7
+vreg_if_id
+R12
+!i10b 1
+!s100 f:cNYQRg<M53Sem_dK;K92
+IXNU8JPD:o8_ogXM:;dMW81
+R1
+R2
+R8
+8C:/Users/Keerti A M/Documents/RISC-V-CPU/src/cpu/reg_if_id.v
+FC:/Users/Keerti A M/Documents/RISC-V-CPU/src/cpu/reg_if_id.v
+L0 3
+R4
+r1
+!s85 0
+31
+R13
+!s107 C:\Users\Keerti A M\Documents\RISC-V-CPU\src\cpu\defines.v|C:/Users/Keerti A M/Documents/RISC-V-CPU/src/cpu/reg_if_id.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Keerti A M/Documents/RISC-V-CPU/src/cpu/reg_if_id.v|
+!i113 1
+R6
+R7
+vreg_mem_wb
+Z18 !s110 1791458587
+!i10b 1
+!s100 FCeQP8oeJGN7]d?VmSz5k2
+I54VaMn1IP1XOF3Sf53X@W2
+R1
+R2
+R8
+8C:/Users/Keerti A M/Documents/RISC-V-CPU/src/cpu/reg_mem_wb.v
+FC:/Users/Keerti A M/Documents/RISC-V-CPU/src/cpu/reg_mem_wb.v
+L0 3
+R4
+r1
+!s85 0
+31
+R13
+!s107 C:\Users\Keerti A M\Documents\RISC-V-CPU\src\cpu\defines.v|C:/Users/Keerti A M/Documents/RISC-V-CPU/src/cpu/reg_mem_wb.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Keerti A M/Documents/RISC-V-CPU/src/cpu/reg_mem_wb.v|
+!i113 1
+R6
+R7
+vreg_pc
+R18
+!i10b 1
+!s100 1U<I9EmJ3G_d0i2?_>1J71
+I[;T7;Szh<EeEA9XkDTh^G0
+R1
+R2
+w1791457745
+8C:/Users/Keerti A M/Documents/RISC-V-CPU/src/cpu/reg_pc.v
+FC:/Users/Keerti A M/Documents/RISC-V-CPU/src/cpu/reg_pc.v
+L0 3
+R4
+r1
+!s85 0
+31
+Z19 !s108 1791458587.000000
+!s107 C:\Users\Keerti A M\Documents\RISC-V-CPU\src\cpu\defines.v|C:/Users/Keerti A M/Documents/RISC-V-CPU/src/cpu/reg_pc.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Keerti A M/Documents/RISC-V-CPU/src/cpu/reg_pc.v|
+!i113 1
+R6
+R7
+vregfile
+R18
+!i10b 1
+!s100 z:kVfl<VeOBgbDHVkBlUE3
+IKH`c>@9zg<a[Rof0Ff7oH3
+R1
+R2
+R3
+8C:/Users/Keerti A M/Documents/RISC-V-CPU/src/cpu/regfile.v
+FC:/Users/Keerti A M/Documents/RISC-V-CPU/src/cpu/regfile.v
+L0 3
+R4
+r1
+!s85 0
+31
+R19
+!s107 C:\Users\Keerti A M\Documents\RISC-V-CPU\src\cpu\defines.v|C:/Users/Keerti A M/Documents/RISC-V-CPU/src/cpu/regfile.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Keerti A M/Documents/RISC-V-CPU/src/cpu/regfile.v|
+!i113 1
+R6
+R7
+vriscv_cpu
+R18
+!i10b 1
+!s100 eZZc:NeVJFHnH0L?fUW`W3
+I]E9]hgY?YGa]JfDjBL>bD0
+R1
+R2
+w1791452923
+8C:/Users/Keerti A M/Documents/RISC-V-CPU/src/cpu/riscv_cpu.v
+FC:/Users/Keerti A M/Documents/RISC-V-CPU/src/cpu/riscv_cpu.v
+L0 6
+R4
+r1
+!s85 0
+31
+R19
+!s107 C:\Users\Keerti A M\Documents\RISC-V-CPU\src\cpu\defines.v|C:/Users/Keerti A M/Documents/RISC-V-CPU/src/cpu/riscv_cpu.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Keerti A M/Documents/RISC-V-CPU/src/cpu/riscv_cpu.v|
+!i113 1
+R6
+R7
+vroot_cpu_tb
+Z20 !s110 1791458588
+!i10b 1
+!s100 SZD`zDMK?eoCRh7E?@7zY1
+IWL1OIz>zgVa_SaiQ6kL_e3
+R1
+R2
+w1791453023
+8C:/Users/Keerti A M/Documents/RISC-V-CPU/test/root_cpu_tb.v
+FC:/Users/Keerti A M/Documents/RISC-V-CPU/test/root_cpu_tb.v
+L0 3
+R4
+r1
+!s85 0
+31
+Z21 !s108 1791458588.000000
+!s107 C:/Users/Keerti A M/Documents/RISC-V-CPU/test/root_cpu_tb.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Keerti A M/Documents/RISC-V-CPU/test/root_cpu_tb.v|
+!i113 1
+R6
+R7
+vroot_sim_memory
+Z22 !s110 1791458589
+!i10b 1
+!s100 Z;AE?b`9?YCjCF:Tcz=m92
+I@ZDdF:`CjgdHS0<D2H5jI0
+R1
+R2
+Z23 w1791452996
+Z24 8C:/Users/Keerti A M/Documents/RISC-V-CPU/test/root_sim_top.v
+Z25 FC:/Users/Keerti A M/Documents/RISC-V-CPU/test/root_sim_top.v
+L0 42
+R4
+r1
+!s85 0
+31
+R21
+Z26 !s107 C:/Users/Keerti A M/Documents/RISC-V-CPU/test/root_sim_top.v|
+Z27 !s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Keerti A M/Documents/RISC-V-CPU/test/root_sim_top.v|
+!i113 1
+R6
+R7
+vroot_sim_top
+R22
+!i10b 1
+!s100 JQ[SnKbANEQ`6KKT34UGm3
+ITUDHJjRoc]0XQ<fG;ahZC3
+R1
+R2
+R23
+R24
+R25
+L0 3
+R4
+r1
+!s85 0
+31
+R21
+R26
+R27
+!i113 1
+R6
+R7
+vsim_cpu
+R22
+!i10b 1
+!s100 8Il8I>jzgHNZRzFOc9izI3
+I]YgaX=ZhG9EhMD5`[jJYS2
+R1
+R2
+R8
+8C:/Users/Keerti A M/Documents/RISC-V-CPU/test/sim_cpu.v
+FC:/Users/Keerti A M/Documents/RISC-V-CPU/test/sim_cpu.v
+L0 5
+R4
+r1
+!s85 0
+31
+Z28 !s108 1791458589.000000
+!s107 C:/Users/Keerti A M/Documents/RISC-V-CPU/test/sim_cpu.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Keerti A M/Documents/RISC-V-CPU/test/sim_cpu.v|
+!i113 1
+R6
+R7
+vsim_memory
+R22
+!i10b 1
+!s100 o132>5X4FKz>6SI9b>H_G0
+I8]Nl5fGo9I:ck<U<oZRWG1
+R1
+R2
+w1773335753
+8C:/Users/Keerti A M/Documents/RISC-V-CPU/test/sim_mem.v
+FC:/Users/Keerti A M/Documents/RISC-V-CPU/test/sim_mem.v
+L0 5
+R4
+r1
+!s85 0
+31
+R28
+!s107 C:/Users/Keerti A M/Documents/RISC-V-CPU/test/sim_mem.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Keerti A M/Documents/RISC-V-CPU/test/sim_mem.v|
+!i113 1
+R6
+R7
+vsimo_fifo
+R9
+!i10b 1
+!s100 <T7GP25DN??kcdAG04E1O3
+I`GnNOij3^kcT;VLFM]F6l1
+R1
+R10
+R8
+R14
+R15
+L0 6
+R4
+r1
+!s85 0
+31
+R11
+R16
+R17
+!i113 1
+R6
+R7
+vsimple_ram
+R18
+!i10b 1
+!s100 eA09]A2YSW[ikMXeUJ:UO1
+INBOc>k:2IESa1:keZ2Wd<3
+R1
+R2
+R8
+8C:/Users/Keerti A M/Documents/RISC-V-CPU/src/cpu/simple_ram.v
+FC:/Users/Keerti A M/Documents/RISC-V-CPU/src/cpu/simple_ram.v
+L0 1
+R4
+r1
+!s85 0
+31
+R19
+!s107 C:/Users/Keerti A M/Documents/RISC-V-CPU/src/cpu/simple_ram.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Keerti A M/Documents/RISC-V-CPU/src/cpu/simple_ram.v|
+!i113 1
+R6
+R7
+vstage_ex
+R20
+!i10b 1
+!s100 [fXNnYHcJIg8H[I9QzgG@2
+I`dSF]9JOb2JUe1PbWDEkh0
+R1
+R2
+R8
+8C:/Users/Keerti A M/Documents/RISC-V-CPU/src/cpu/stage_ex.v
+FC:/Users/Keerti A M/Documents/RISC-V-CPU/src/cpu/stage_ex.v
+L0 3
+R4
+r1
+!s85 0
+31
+R19
+!s107 C:\Users\Keerti A M\Documents\RISC-V-CPU\src\cpu\defines.v|C:/Users/Keerti A M/Documents/RISC-V-CPU/src/cpu/stage_ex.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Keerti A M/Documents/RISC-V-CPU/src/cpu/stage_ex.v|
+!i113 1
+R6
+R7
+vstage_id
+R20
+!i10b 1
+!s100 g3d6_i4PhELR=U0SU2Jj<1
+I;0^nGkYE`M?6Ab=z@3@5G1
+R1
+R2
+R8
+8C:/Users/Keerti A M/Documents/RISC-V-CPU/src/cpu/stage_id.v
+FC:/Users/Keerti A M/Documents/RISC-V-CPU/src/cpu/stage_id.v
+L0 3
+R4
+r1
+!s85 0
+31
+R21
+!s107 C:\Users\Keerti A M\Documents\RISC-V-CPU\src\cpu\defines.v|C:/Users/Keerti A M/Documents/RISC-V-CPU/src/cpu/stage_id.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Keerti A M/Documents/RISC-V-CPU/src/cpu/stage_id.v|
+!i113 1
+R6
+R7
+vstage_if
+R20
+!i10b 1
+!s100 97:<8E=J1;25T6[:DeTUh3
+IZg`L@9SgR4FLJ0Hi2^Lio2
+R1
+R2
+w1791452861
+8C:/Users/Keerti A M/Documents/RISC-V-CPU/src/cpu/stage_if.v
+FC:/Users/Keerti A M/Documents/RISC-V-CPU/src/cpu/stage_if.v
+L0 3
+R4
+r1
+!s85 0
+31
+R21
+!s107 C:\Users\Keerti A M\Documents\RISC-V-CPU\src\cpu\defines.v|C:/Users/Keerti A M/Documents/RISC-V-CPU/src/cpu/stage_if.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Keerti A M/Documents/RISC-V-CPU/src/cpu/stage_if.v|
+!i113 1
+R6
+R7
+vstage_mem
+R20
+!i10b 1
+!s100 Gd2>UJbZ0<_>WB0:>Ylo^2
+ImbokIR2[2@a5>h>Mk9i_60
+R1
+R2
+w1791458516
+8C:/Users/Keerti A M/Documents/RISC-V-CPU/src/cpu/stage_mem.v
+FC:/Users/Keerti A M/Documents/RISC-V-CPU/src/cpu/stage_mem.v
+L0 3
+R4
+r1
+!s85 0
+31
+R21
+!s107 C:\Users\Keerti A M\Documents\RISC-V-CPU\src\cpu\defines.v|C:/Users/Keerti A M/Documents/RISC-V-CPU/src/cpu/stage_mem.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Keerti A M/Documents/RISC-V-CPU/src/cpu/stage_mem.v|
+!i113 1
+R6
+R7
+vtest_bench
+R22
+!i10b 1
+!s100 nQK>dz4:SNimAVko[_Y7D2
+I?Od^I]L?Q1G@0>aLKHeRk3
+R1
+R2
+w1773335474
+8C:/Users/Keerti A M/Documents/RISC-V-CPU/test/test_bench.v
+FC:/Users/Keerti A M/Documents/RISC-V-CPU/test/test_bench.v
+L0 3
+R4
+r1
+!s85 0
+31
+R28
+!s107 C:/Users/Keerti A M/Documents/RISC-V-CPU/test/test_bench.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Keerti A M/Documents/RISC-V-CPU/test/test_bench.v|
+!i113 1
+R6
+R7
+vuart_trans
+R20
+!i10b 1
+!s100 0nnm?a26MFeJfhL@aVI8]1
+IHNDU]ec;A[<ghd<>>W^H?2
+R1
+R2
+R8
+8C:/Users/Keerti A M/Documents/RISC-V-CPU/src/cpu/uart_trans.v
+FC:/Users/Keerti A M/Documents/RISC-V-CPU/src/cpu/uart_trans.v
+L0 3
+R4
+r1
+!s85 0
+31
+R21
+!s107 C:/Users/Keerti A M/Documents/RISC-V-CPU/src/cpu/uart_trans.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Keerti A M/Documents/RISC-V-CPU/src/cpu/uart_trans.v|
+!i113 1
+R6
+R7

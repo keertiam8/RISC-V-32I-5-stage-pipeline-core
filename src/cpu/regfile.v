@@ -15,6 +15,12 @@ module regfile (
 );
 
 	reg[`RegBus]  regs[0:`RegNum-1];
+	integer i;
+
+	initial begin
+		for (i = 0; i < `RegNum; i = i + 1)
+			regs[i] = 0;
+	end
 
 	// write
 	always @ (posedge clk) begin
@@ -30,22 +36,22 @@ module regfile (
 	// read 1
 	always @ (*) begin
 		if (rst || !re1 || raddr1 == 0) begin
-			rdata1 <= 0;
+			rdata1 = 0;
 		end else if (we && raddr1 == waddr) begin
-			rdata1 <= wdata;
+			rdata1 = wdata;
 		end else begin
-			rdata1 <= regs[raddr1];
+			rdata1 = regs[raddr1];
 		end
 	end
 
 	// read 2
 	always @ (*) begin
 		if (rst || !re2 || raddr2 == 0) begin
-			rdata2 <= 0;
+			rdata2 = 0;
 		end else if (we && raddr2 == waddr) begin
-			rdata2 <= wdata;
+			rdata2 = wdata;
 		end else begin
-			rdata2 <= regs[raddr2];
+			rdata2 = regs[raddr2];
 		end
 	end
 

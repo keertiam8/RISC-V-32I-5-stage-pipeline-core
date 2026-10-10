@@ -17,7 +17,7 @@ module test_bench ();
 		#2000 $stop;
 	end
 
-	sim_cpu cpu_inst(
+	riscv_min_sopc riscv_min_sopc0 (
 		.clk(CLOCK_50),
 		.rst(rst)
 	);

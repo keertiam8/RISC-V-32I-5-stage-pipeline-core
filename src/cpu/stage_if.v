@@ -1,6 +1,7 @@
 `include "defines.v"
 
 module stage_if (
+	input  wire               clk       ,
 	input  wire               rst       ,
 	input  wire [`MemAddrBus] pc_i      ,
 	input  wire [    `RegBus] mem_data_i,
@@ -17,51 +18,53 @@ module stage_if (
 
 	reg mem_taking;
 	reg waiting_one;
+	reg next_mem_taking;
+	reg next_waiting_one;
 
 	always @ (*) begin
-		if (right_one) begin
-			waiting_one = 0;
-			//$display("Right one is here, %h", pc_i);
-		end
+		stallreq       = 0;
+		mem_re         = 0;
+		mem_addr_o     = 0;
+		pc_o           = 0;
+		inst_o         = 0;
+		next_mem_taking = mem_taking;
+		next_waiting_one = waiting_one;
+
+		if (right_one)
+			next_waiting_one = 0;
+
 		if (rst) begin
-			stallreq    = 0;
-			mem_taking  = 0;
-			pc_o        = 0;
-			inst_o      = 0;
-			mem_re      = 0;
-			mem_addr_o  = 0;
-			waiting_one = 0;
+			next_mem_taking = 0;
+			next_waiting_one = 0;
 		end else if (br) begin
-			//$display("br");
-			pc_o        = 0;
-			inst_o      = 0;
-			mem_taking  = 0;
-			stallreq    = 0;
-			waiting_one = 1;
+			next_mem_taking = 0;
+			next_waiting_one = 1;
 		end else if (!waiting_one && !mem_busy && !mem_taking) begin
-			//$display("!mem_busy && !mem_taking");
-			stallreq   = 1;
-			mem_taking = 1;
-			mem_re     = 1;
-			mem_addr_o = pc_i;
-		end else if (!waiting_one && !mem_busy && mem_taking) begin
-			//$display("!mem_busy && mem_taking");
-			stallreq   = 0;
-			mem_taking = 0;
-			pc_o       = pc_i;
-			inst_o     = mem_data_i;
-			//$display("IF Get Inst: %h\n", inst_o);
-		end else if (!waiting_one && mem_busy) begin
-			//$display("mem_busy, %h", pc_i);
 			stallreq = 1;
-		end else if (!waiting_one) begin
-			stallreq    = 0;
-			mem_taking  = 0;
-			pc_o        = 0;
-			inst_o      = 0;
-			mem_re      = 0;
-			mem_addr_o  = 0;
-			waiting_one = 0;
+			mem_re = 1;
+			mem_addr_o = pc_i;
+			next_mem_taking = 1;
+		end else if (!waiting_one && mem_taking && mem_done) begin
+			pc_o = pc_i;
+			inst_o = mem_data_i;
+			next_mem_taking = 0;
+		end else if (!waiting_one && mem_taking) begin
+			stallreq = 1;
+		end else if (!waiting_one && mem_busy) begin
+			stallreq = 1;
+		end else if (waiting_one) begin
+			next_mem_taking = 0;
+			next_waiting_one = 0;
+		end
+	end
+
+	always @ (posedge clk or posedge rst) begin
+		if (rst) begin
+			mem_taking <= 0;
+			waiting_one <= 0;
+		end else begin
+			mem_taking <= next_mem_taking;
+			waiting_one <= next_waiting_one;
 		end
 	end
 

@@ -23,3 +23,7 @@
 	(x <= 262144)	? 18 : \
 	(x <= 524288)	? 19 : \
 	(x <= 1048576)	? 20 : -1)
+
+
+// CLOG2 helps determine the number of bits needed to select a box (way) inside a shelf (set).
+//helps nassoc choose the number of boxes inside of a shelf
