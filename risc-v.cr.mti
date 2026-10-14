@@ -75,26 +75,12 @@ Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  
 Top level modules:
 	regfile
 
-} {} {}} {C:/Users/Keerti A M/Documents/RISC-V-CPU/test/test_bench.v} {1 {vlog -work work -stats=none {C:/Users/Keerti A M/Documents/RISC-V-CPU/test/test_bench.v}
+} {} {}} {C:/Users/Keerti A M/Documents/RISC-V-CPU/src/cpu/cpu.v} {1 {vlog -work work -stats=none {C:/Users/Keerti A M/Documents/RISC-V-CPU/src/cpu/cpu.v}
 Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
--- Compiling module test_bench
+-- Compiling module cpu
 
 Top level modules:
-	test_bench
-
-} {} {}} {C:/Users/Keerti A M/Documents/RISC-V-CPU/test/sim_mem.v} {1 {vlog -work work -stats=none {C:/Users/Keerti A M/Documents/RISC-V-CPU/test/sim_mem.v}
-Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
--- Compiling module sim_memory
-
-Top level modules:
-	sim_memory
-
-} {} {}} {C:/Users/Keerti A M/Documents/RISC-V-CPU/src/cpu/stage_id.v} {1 {vlog -work work -stats=none {C:/Users/Keerti A M/Documents/RISC-V-CPU/src/cpu/stage_id.v}
-Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
--- Compiling module stage_id
-
-Top level modules:
-	stage_id
+	cpu
 
 } {} {}} {C:/Users/Keerti A M/Documents/RISC-V-CPU/src/cpu/stage_ex.v} {1 {vlog -work work -stats=none {C:/Users/Keerti A M/Documents/RISC-V-CPU/src/cpu/stage_ex.v}
 Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
@@ -103,12 +89,26 @@ Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  
 Top level modules:
 	stage_ex
 
-} {} {}} {C:/Users/Keerti A M/Documents/RISC-V-CPU/src/cpu/cpu.v} {1 {vlog -work work -stats=none {C:/Users/Keerti A M/Documents/RISC-V-CPU/src/cpu/cpu.v}
+} {} {}} {C:/Users/Keerti A M/Documents/RISC-V-CPU/src/cpu/stage_id.v} {1 {vlog -work work -stats=none {C:/Users/Keerti A M/Documents/RISC-V-CPU/src/cpu/stage_id.v}
 Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
--- Compiling module cpu
+-- Compiling module stage_id
 
 Top level modules:
-	cpu
+	stage_id
+
+} {} {}} {C:/Users/Keerti A M/Documents/RISC-V-CPU/test/sim_mem.v} {1 {vlog -work work -stats=none {C:/Users/Keerti A M/Documents/RISC-V-CPU/test/sim_mem.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module sim_memory
+
+Top level modules:
+	sim_memory
+
+} {} {}} {C:/Users/Keerti A M/Documents/RISC-V-CPU/test/test_bench.v} {1 {vlog -work work -stats=none {C:/Users/Keerti A M/Documents/RISC-V-CPU/test/test_bench.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module test_bench
+
+Top level modules:
+	test_bench
 
 } {} {}} {C:/Users/Keerti A M/Documents/RISC-V-CPU/test/sim_cpu.v} {1 {vlog -work work -stats=none {C:/Users/Keerti A M/Documents/RISC-V-CPU/test/sim_cpu.v}
 Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
@@ -117,19 +117,19 @@ Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  
 Top level modules:
 	sim_cpu
 
-} {} {}} {C:/Users/Keerti A M/Documents/RISC-V-CPU/src/cpu/stage_mem.v} {1 {vlog -work work -stats=none {C:/Users/Keerti A M/Documents/RISC-V-CPU/src/cpu/stage_mem.v}
-Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
--- Compiling module stage_mem
-
-Top level modules:
-	stage_mem
-
 } {} {}} {C:/Users/Keerti A M/Documents/RISC-V-CPU/src/cpu/stage_if.v} {1 {vlog -work work -stats=none {C:/Users/Keerti A M/Documents/RISC-V-CPU/src/cpu/stage_if.v}
 Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
 -- Compiling module stage_if
 
 Top level modules:
 	stage_if
+
+} {} {}} {C:/Users/Keerti A M/Documents/RISC-V-CPU/src/cpu/stage_mem.v} {1 {vlog -work work -stats=none {C:/Users/Keerti A M/Documents/RISC-V-CPU/src/cpu/stage_mem.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module stage_mem
+
+Top level modules:
+	stage_mem
 
 } {} {}} {C:/Users/Keerti A M/Documents/RISC-V-CPU/src/cpu/uart_trans.v} {1 {vlog -work work -stats=none {C:/Users/Keerti A M/Documents/RISC-V-CPU/src/cpu/uart_trans.v}
 Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
@@ -138,6 +138,13 @@ Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  
 Top level modules:
 	uart_trans
 
+} {} {}} {C:/Users/Keerti A M/Documents/RISC-V-CPU/src/cpu/reg_mem_wb.v} {1 {vlog -work work -stats=none {C:/Users/Keerti A M/Documents/RISC-V-CPU/src/cpu/reg_mem_wb.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module reg_mem_wb
+
+Top level modules:
+	reg_mem_wb
+
 } {} {}} {C:/Users/Keerti A M/Documents/RISC-V-CPU/src/cpu/cache.v} {1 {vlog -work work -stats=none {C:/Users/Keerti A M/Documents/RISC-V-CPU/src/cpu/cache.v}
 Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
 -- Compiling module simple_ram
@@ -145,13 +152,6 @@ Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  
 
 Top level modules:
 	cache
-
-} {} {}} {C:/Users/Keerti A M/Documents/RISC-V-CPU/src/cpu/reg_mem_wb.v} {1 {vlog -work work -stats=none {C:/Users/Keerti A M/Documents/RISC-V-CPU/src/cpu/reg_mem_wb.v}
-Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
--- Compiling module reg_mem_wb
-
-Top level modules:
-	reg_mem_wb
 
 } {} {}} {C:/Users/Keerti A M/Documents/RISC-V-CPU/src/cpu/reg_id_ex.v} {1 {vlog -work work -stats=none {C:/Users/Keerti A M/Documents/RISC-V-CPU/src/cpu/reg_id_ex.v}
 Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016

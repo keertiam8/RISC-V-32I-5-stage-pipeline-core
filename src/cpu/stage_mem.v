@@ -109,7 +109,7 @@ module stage_mem (
 				`EXE_LH_OP : begin
 					case (mem_addr_i[1:0])
 						2'b00   : reg_wdata_o = {{16{mem_data_i[15]}}, mem_data_i[15:0]};
-						2'b10   : reg_wdata_o = {{16{mem_data_i[15]}}, mem_data_i[31:16]};
+						2'b10   : reg_wdata_o = {{16{mem_data_i[31]}}, mem_data_i[31:16]};
 						default : reg_wdata_o = 0;
 					endcase // mem_addr_i[1:0]
 				end

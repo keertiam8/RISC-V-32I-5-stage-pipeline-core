@@ -1,0 +1,25 @@
+# vsim -c work.alu_ctrl_mem_tb -do "run -all; quit -f" 
+# Start time: 13:41:44 on Oct 14,2026
+# Loading work.alu_ctrl_mem_tb
+# Loading work.root_sim_top
+# Loading work.riscv_cpu
+# Loading work.cache
+# Loading work.ctrl
+# Loading work.reg_pc
+# Loading work.stage_if
+# Loading work.reg_if_id
+# Loading work.stage_id
+# Loading work.regfile
+# Loading work.reg_id_ex
+# Loading work.stage_ex
+# Loading work.reg_ex_mem
+# Loading work.stage_mem
+# Loading work.reg_mem_wb
+# Loading work.root_sim_memory
+# Loading work.simple_ram
+# run -all
+# PASS: ALU, branch, jal, lui/auipc and sub-word load checks passed
+# ** Note: $finish    : alu_ctrl_mem_tb.v(106)
+#    Time: 15015 ns  Iteration: 1  Instance: /alu_ctrl_mem_tb
+# End time: 13:41:45 on Oct 14,2026, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0

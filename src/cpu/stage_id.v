@@ -197,13 +197,13 @@ module stage_id (
 							`SET_INST(`EXE_RES_ARITH, `EXE_SLTU_OP, 1, 1, rs, 0, 0, 1, rd, 0, ({{20{I_imm[11]}}, I_imm}), 0)
 						end
 						`FUNCT3_XORI : begin
-							`SET_INST(`EXE_RES_LOGIC, `EXE_XOR_OP, 1, 1, rs, 0, 0, 1, rd, 0, ({20'h0, I_imm}), 0)
+							`SET_INST(`EXE_RES_LOGIC, `EXE_XOR_OP, 1, 1, rs, 0, 0, 1, rd, 0, ({{20{I_imm[11]}}, I_imm}), 0)
 						end
 						`FUNCT3_ORI : begin
-							`SET_INST(`EXE_RES_LOGIC, `EXE_OR_OP, 1, 1, rs, 0, 0, 1, rd, 0, ({20'h0, I_imm}), 0)
+							`SET_INST(`EXE_RES_LOGIC, `EXE_OR_OP, 1, 1, rs, 0, 0, 1, rd, 0, ({{20{I_imm[11]}}, I_imm}), 0)
 						end
 						`FUNCT3_ANDI : begin
-							`SET_INST(`EXE_RES_LOGIC, `EXE_AND_OP, 1, 1, rs, 0, 0, 1, rd, 0, ({20'h0, I_imm}), 0)
+							`SET_INST(`EXE_RES_LOGIC, `EXE_AND_OP, 1, 1, rs, 0, 0, 1, rd, 0, ({{20{I_imm[11]}}, I_imm}), 0)
 						end
 						`FUNCT3_SLLI : begin
 							`SET_INST(`EXE_RES_SHIFT, `EXE_SLL_OP, 1, 1, rs, 0, 0, 1, rd, 0, rt, 0)
